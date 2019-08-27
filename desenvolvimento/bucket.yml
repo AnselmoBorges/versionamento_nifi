@@ -1,6 +1,6 @@
 flows:
-  8865d78d-4923-4765-9f3e-77a7f9c3c709: {ver: 1, file: Templates_testes.snapshot,
-    comments: Versão inicial, author: anonymous, created: 1566926440770, flowName: Templates
+  8865d78d-4923-4765-9f3e-77a7f9c3c709: {ver: 2, file: Templates_testes.snapshot,
+    comments: deletei o putSQL, author: anonymous, created: 1566927428367, flowName: Templates
       testes, flowDesc: Templates criados para testes}
 layoutVer: 1
 bucketId: c5c955b2-26c6-4045-8d0c-4003596e37df
