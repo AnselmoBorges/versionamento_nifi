@@ -15,6 +15,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "1bd667e7-ebe5-398c-bf2b-2059c6c6c241",
+            "name" : "PutHDFS",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+          "identifier" : "0d822158-9b08-3aab-97a0-b571355478af",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "5414c57e-5225-3583-9486-95b0aae4c4d2",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
             "id" : "13380b60-70ad-3344-9e9d-c980983d5096",
             "name" : "PutSQL - Impala",
             "type" : "PROCESSOR"
@@ -40,12 +70,42 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "de093d5f-bdc3-3eac-8885-663b30ccc364",
+            "name" : "PutElasticsearch",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+          "identifier" : "c8b9139d-1f1f-3d7e-a39d-ffa05b7cfdc9",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "5414c57e-5225-3583-9486-95b0aae4c4d2",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 1537.5015258789062,
-            "y" : -181.8764271736145
+            "x" : 1470.6432495117188,
+            "y" : -191.27837419509888
           }, {
-            "x" : 1537.5015258789062,
-            "y" : -131.8764271736145
+            "x" : 1470.6432495117188,
+            "y" : -141.27837419509888
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -70,6 +130,36 @@
             "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
             "id" : "de093d5f-bdc3-3eac-8885-663b30ccc364",
             "name" : "PutElasticsearch",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "9095f75b-5303-362b-821d-81485e234db2",
+            "name" : "LogAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+          "identifier" : "19c9cb47-61d5-3e68-93a0-fe6ea27f2580",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
+            "id" : "1bd667e7-ebe5-398c-bf2b-2059c6c6c241",
+            "name" : "PutHDFS",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -166,96 +256,6 @@
             "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
             "id" : "13380b60-70ad-3344-9e9d-c980983d5096",
             "name" : "PutSQL - Impala",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "b0e4f60f-77e2-300c-b581-eef0d977f659",
-            "name" : "ConvertJSONToSQL - MySQL",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-          "identifier" : "be96ee2d-6f8a-3d1d-8015-97f13f385920",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "5414c57e-5225-3583-9486-95b0aae4c4d2",
-            "name" : "GenerateFlowFile",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "9095f75b-5303-362b-821d-81485e234db2",
-            "name" : "LogAttribute",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-          "identifier" : "ac34b576-4366-386a-b471-6fe2410d8608",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "1bd667e7-ebe5-398c-bf2b-2059c6c6c241",
-            "name" : "PutHDFS",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "de093d5f-bdc3-3eac-8885-663b30ccc364",
-            "name" : "PutElasticsearch",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-          "identifier" : "f444e005-bb17-31b6-85e1-94c97b08ae09",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "d9723a8a-b18b-3012-a008-3312e9e5ad61",
-            "id" : "5414c57e-5225-3583-9486-95b0aae4c4d2",
-            "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -419,8 +419,8 @@
         "name" : "Insersão no MySQL",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 490.0,
-          "y" : -46.82298231124878
+          "x" : -117.71731567382812,
+          "y" : -132.32114362716675
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -1084,8 +1084,8 @@
           "name" : "LogAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2033.1143188476562,
-            "y" : -419.9723070859909
+            "x" : 2254.5825805664062,
+            "y" : -453.40144526958466
           },
           "properties" : {
             "character-set" : "US-ASCII",
@@ -1248,8 +1248,8 @@
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1605.0247802734375,
-            "y" : -251.08134078979492
+            "x" : 1612.33740234375,
+            "y" : -216.60754013061523
           },
           "properties" : {
             "character-set" : "UTF-8",
@@ -1530,8 +1530,8 @@
           "name" : "PutElasticsearch",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1074.5015258789062,
-            "y" : -221.8764271736145
+            "x" : 1007.6432495117188,
+            "y" : -231.27837419509888
           },
           "properties" : {
             "ElasticSearch Hosts" : "joanna01.spclab.io:9200",

@@ -2,8 +2,8 @@ flows:
   8865d78d-4923-4765-9f3e-77a7f9c3c709: {ver: 2, file: Templates_testes.snapshot,
     comments: deletei o putSQL, author: anonymous, created: 1566927428367, flowName: Templates
       testes, flowDesc: Templates criados para testes}
-  3c711d4e-2b09-4694-9301-0ed115c27de6: {ver: 3, file: inicial_no_gitlab.snapshot,
-    comments: coloquei o putFTP, author: anonymous, created: 1566937541407, flowName: inicial
+  3c711d4e-2b09-4694-9301-0ed115c27de6: {ver: 4, file: inicial_no_gitlab.snapshot,
+    comments: Alterado, author: anonymous, created: 1566947131424, flowName: inicial
       no gitlab, flowDesc: Templates de teste}
 layoutVer: 1
 bucketId: c5c955b2-26c6-4045-8d0c-4003596e37df
