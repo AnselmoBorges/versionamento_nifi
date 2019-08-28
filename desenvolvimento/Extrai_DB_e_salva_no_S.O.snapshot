@@ -384,10 +384,10 @@
             "esql-max-rows" : "0",
             "compression-format" : "NONE",
             "esql-output-batch-size" : "0",
-            "SQL select query" : "select * from table01",
+            "SQL select query" : "select * from CADPOS.LOG_OPERADOR_CAD_POSITIVO",
             "dbf-default-precision" : "10",
             "Max Wait Time" : "0 seconds",
-            "Database Connection Pooling Service" : "c08ad729-c118-3aaf-8a46-9c1c3cf4e272",
+            "Database Connection Pooling Service" : "1550c84a-9622-3de1-ae66-838a02368bf6",
             "dbf-normalize" : "false",
             "dbf-user-logical-types" : "false",
             "dbf-default-scale" : "0"
