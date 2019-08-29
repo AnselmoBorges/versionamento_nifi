@@ -8,5 +8,8 @@ flows:
   3c711d4e-2b09-4694-9301-0ed115c27de6: {ver: 4, file: inicial_no_gitlab.snapshot,
     comments: Alterado, author: anonymous, created: 1566947131424, flowName: inicial
       no gitlab, flowDesc: Templates de teste}
+  2b84d4a3-c73c-439d-ae67-133657b2c66c: {ver: 1, file: Poe_no_kudo_do_mysql.snapshot,
+    comments: versão inicial, author: anonymous, created: 1567114550242, flowName: Poe
+      no kudo do mysql, flowDesc: Poe no kudo do mysql}
 layoutVer: 1
 bucketId: c5c955b2-26c6-4045-8d0c-4003596e37df
