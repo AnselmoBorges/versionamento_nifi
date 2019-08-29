@@ -11,11 +11,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 1655.0,
-            "y" : 154.0
+            "x" : 1662.9171142578125,
+            "y" : 175.1121368408203
           }, {
-            "x" : 1655.0,
-            "y" : 204.0
+            "x" : 1662.9171142578125,
+            "y" : 225.1121368408203
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -266,7 +266,77 @@
           },
           "zIndex" : 0
         } ],
-        "controllerServices" : [ ],
+        "controllerServices" : [ {
+          "bundle" : {
+            "artifact" : "nifi-record-serialization-services-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0.1.0.0.0-90"
+          },
+          "comments" : "",
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.9.0.1.0.0.0-90"
+            },
+            "type" : "org.apache.nifi.serialization.RecordReaderFactory"
+          } ],
+          "groupIdentifier" : "6a3cef66-0ff2-31a7-a071-b39bedeca383",
+          "identifier" : "325f7e3b-a31a-3cc1-93dc-6641a9eaa79e",
+          "name" : "AvroReader",
+          "properties" : {
+            "schema-name" : "${schema.name}",
+            "cache-size" : "1000",
+            "schema-access-strategy" : "embedded-avro-schema",
+            "schema-text" : "${avro.schema}"
+          },
+          "propertyDescriptors" : {
+            "schema-branch" : {
+              "displayName" : "Schema Branch",
+              "identifiesControllerService" : false,
+              "name" : "schema-branch",
+              "sensitive" : false
+            },
+            "schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "schema-name",
+              "sensitive" : false
+            },
+            "cache-size" : {
+              "displayName" : "Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "cache-size",
+              "sensitive" : false
+            },
+            "schema-registry" : {
+              "displayName" : "Schema Registry",
+              "identifiesControllerService" : true,
+              "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "schema-access-strategy" : {
+              "displayName" : "Schema Access Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-access-strategy",
+              "sensitive" : false
+            },
+            "schema-version" : {
+              "displayName" : "Schema Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-version",
+              "sensitive" : false
+            },
+            "schema-text" : {
+              "displayName" : "Schema Text",
+              "identifiesControllerService" : false,
+              "name" : "schema-text",
+              "sensitive" : false
+            }
+          },
+          "type" : "org.apache.nifi.avro.AvroReader"
+        } ],
         "funnels" : [ ],
         "identifier" : "6a3cef66-0ff2-31a7-a071-b39bedeca383",
         "inputPorts" : [ ],
@@ -377,8 +447,8 @@
           "name" : "ExecuteSQL",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1189.0,
-            "y" : -91.0
+            "x" : 1298.5191650390625,
+            "y" : -172.80948638916016
           },
           "properties" : {
             "esql-max-rows" : "0",
@@ -620,8 +690,8 @@
           "name" : "SplitAvro",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1192.0,
-            "y" : 114.0
+            "x" : 1199.9171142578125,
+            "y" : 135.1121368408203
           },
           "properties" : {
             "Split Strategy" : "Record",
