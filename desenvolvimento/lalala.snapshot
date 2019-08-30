@@ -1,0 +1,607 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 629.659076703189,
+            "y" : 913.3606447348722
+          }, {
+            "x" : 629.659076703189,
+            "y" : 973.3606447348722
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "dbe08cdc-ed60-32b2-87bc-34132476975c",
+            "name" : "Poe no Kudu rs",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "e5822bf2-75d5-326a-96bc-3afce35c363c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "dbe08cdc-ed60-32b2-87bc-34132476975c",
+            "name" : "Poe no Kudu rs",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "3e645357-a617-362f-8160-a3c425c86c88",
+            "name" : "Poe no Kudu rs",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "ece2179c-2767-315c-9cb9-9fe82fb13f2a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "a3f43a8f-800c-3760-ad28-9a9ed906abb4",
+            "name" : "Consulta tabela no Oracle",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 555.659076703189,
+            "y" : 682.3606447348722
+          }, {
+            "x" : 555.659076703189,
+            "y" : 732.3606447348722
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "3e645357-a617-362f-8160-a3c425c86c88",
+            "name" : "Poe no Kudu rs",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "1181070b-80c5-3cbd-8857-026bd27442c0",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+            "id" : "3e645357-a617-362f-8160-a3c425c86c88",
+            "name" : "Poe no Kudu rs",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "funnels" : [ ],
+        "identifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "Teste Mysql of Poe no Kudu",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 366.73700965024636,
+          "y" : 359.92943050784345
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ "success" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-kudu-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0.1.0.0.0-90"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "dbe08cdc-ed60-32b2-87bc-34132476975c",
+          "name" : "Poe no Kudu rs",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 104.65907670318904,
+            "y" : 881.3606447348722
+          },
+          "properties" : {
+            "Table Name" : "impala::raw.spcjava_etr_tip_ass_2",
+            "kerberos-credentials-service" : "60f1de71-a3e6-332a-8fc3-c327813b66d9",
+            "Kudu Masters" : "sp-vmw-hdp-dev-04.spcdc.br:7051",
+            "Flush Mode" : "AUTO_FLUSH_BACKGROUND",
+            "Batch Size" : "100",
+            "record-reader" : "c8d2e96a-7cba-34c3-a5cf-19506a7fc32c",
+            "Insert Operation" : "INSERT",
+            "Skip head line" : "false",
+            "FlowFiles per Batch" : "1"
+          },
+          "propertyDescriptors" : {
+            "Table Name" : {
+              "displayName" : "Table Name",
+              "identifiesControllerService" : false,
+              "name" : "Table Name",
+              "sensitive" : false
+            },
+            "kerberos-credentials-service" : {
+              "displayName" : "Kerberos Credentials Service",
+              "identifiesControllerService" : true,
+              "name" : "kerberos-credentials-service",
+              "sensitive" : false
+            },
+            "Kudu Masters" : {
+              "displayName" : "Kudu Masters",
+              "identifiesControllerService" : false,
+              "name" : "Kudu Masters",
+              "sensitive" : false
+            },
+            "Flush Mode" : {
+              "displayName" : "Flush Mode",
+              "identifiesControllerService" : false,
+              "name" : "Flush Mode",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Max Records per Batch",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "Insert Operation" : {
+              "displayName" : "Insert Operation",
+              "identifiesControllerService" : false,
+              "name" : "Insert Operation",
+              "sensitive" : false
+            },
+            "Skip head line" : {
+              "displayName" : "Skip head line",
+              "identifiesControllerService" : false,
+              "name" : "Skip head line",
+              "sensitive" : false
+            },
+            "FlowFiles per Batch" : {
+              "displayName" : "FlowFiles per Batch",
+              "identifiesControllerService" : false,
+              "name" : "FlowFiles per Batch",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.kudu.PutKudu",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0.1.0.0.0-90"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "a3f43a8f-800c-3760-ad28-9a9ed906abb4",
+          "name" : "Consulta tabela no Oracle",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 103.7667236328125,
+            "y" : 428.83331298828125
+          },
+          "properties" : {
+            "Table Name" : "spcjava_etr_tip_ass_2",
+            "db-fetch-db-type" : "MySQL",
+            "dbf-default-precision" : "10",
+            "Max Wait Time" : "0 seconds",
+            "Database Connection Pooling Service" : "c08ad729-c118-3aaf-8a46-9c1c3cf4e272",
+            "Maximum-value Columns" : "id",
+            "dbf-user-logical-types" : "false",
+            "qdbt-output-batch-size" : "0",
+            "qdbt-max-rows" : "0",
+            "qdbt-max-frags" : "0",
+            "dbf-default-scale" : "0",
+            "Fetch Size" : "0",
+            "dbf-normalize" : "false"
+          },
+          "propertyDescriptors" : {
+            "Table Name" : {
+              "displayName" : "Table Name",
+              "identifiesControllerService" : false,
+              "name" : "Table Name",
+              "sensitive" : false
+            },
+            "db-fetch-db-type" : {
+              "displayName" : "Database Type",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-db-type",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "Max Wait Time" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "Max Wait Time",
+              "sensitive" : false
+            },
+            "Database Connection Pooling Service" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "Database Connection Pooling Service",
+              "sensitive" : false
+            },
+            "Maximum-value Columns" : {
+              "displayName" : "Maximum-value Columns",
+              "identifiesControllerService" : false,
+              "name" : "Maximum-value Columns",
+              "sensitive" : false
+            },
+            "dbf-user-logical-types" : {
+              "displayName" : "Use Avro Logical Types",
+              "identifiesControllerService" : false,
+              "name" : "dbf-user-logical-types",
+              "sensitive" : false
+            },
+            "qdbt-output-batch-size" : {
+              "displayName" : "Output Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-output-batch-size",
+              "sensitive" : false
+            },
+            "qdbt-max-rows" : {
+              "displayName" : "Max Rows Per Flow File",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-max-rows",
+              "sensitive" : false
+            },
+            "qdbt-max-frags" : {
+              "displayName" : "Maximum Number of Fragments",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-max-frags",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            },
+            "Fetch Size" : {
+              "displayName" : "Fetch Size",
+              "identifiesControllerService" : false,
+              "name" : "Fetch Size",
+              "sensitive" : false
+            },
+            "db-fetch-sql-query" : {
+              "displayName" : "Custom Query",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-sql-query",
+              "sensitive" : false
+            },
+            "Columns to Return" : {
+              "displayName" : "Columns to Return",
+              "identifiesControllerService" : false,
+              "name" : "Columns to Return",
+              "sensitive" : false
+            },
+            "db-fetch-where-clause" : {
+              "displayName" : "Additional WHERE clause",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-where-clause",
+              "sensitive" : false
+            },
+            "dbf-normalize" : {
+              "displayName" : "Normalize Table/Column Names",
+              "identifiesControllerService" : false,
+              "name" : "dbf-normalize",
+              "sensitive" : false
+            },
+            "transaction-isolation-level" : {
+              "displayName" : "Transaction Isolation Level",
+              "identifiesControllerService" : false,
+              "name" : "transaction-isolation-level",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-kudu-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0.1.0.0.0-90"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "3e645357-a617-362f-8160-a3c425c86c88",
+          "name" : "Poe no Kudu rs",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 92.65907670318904,
+            "y" : 642.3606447348722
+          },
+          "properties" : {
+            "Table Name" : "impala::raw.spcjava_etr_tip_ass_2",
+            "kerberos-credentials-service" : "60f1de71-a3e6-332a-8fc3-c327813b66d9",
+            "Kudu Masters" : "sp-vmw-hdp-dev-04.spcdc.br:7051",
+            "Flush Mode" : "AUTO_FLUSH_BACKGROUND",
+            "Batch Size" : "100",
+            "record-reader" : "c8d2e96a-7cba-34c3-a5cf-19506a7fc32c",
+            "Insert Operation" : "INSERT",
+            "Skip head line" : "false",
+            "FlowFiles per Batch" : "1"
+          },
+          "propertyDescriptors" : {
+            "Table Name" : {
+              "displayName" : "Table Name",
+              "identifiesControllerService" : false,
+              "name" : "Table Name",
+              "sensitive" : false
+            },
+            "kerberos-credentials-service" : {
+              "displayName" : "Kerberos Credentials Service",
+              "identifiesControllerService" : true,
+              "name" : "kerberos-credentials-service",
+              "sensitive" : false
+            },
+            "Kudu Masters" : {
+              "displayName" : "Kudu Masters",
+              "identifiesControllerService" : false,
+              "name" : "Kudu Masters",
+              "sensitive" : false
+            },
+            "Flush Mode" : {
+              "displayName" : "Flush Mode",
+              "identifiesControllerService" : false,
+              "name" : "Flush Mode",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Max Records per Batch",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "Insert Operation" : {
+              "displayName" : "Insert Operation",
+              "identifiesControllerService" : false,
+              "name" : "Insert Operation",
+              "sensitive" : false
+            },
+            "Skip head line" : {
+              "displayName" : "Skip head line",
+              "identifiesControllerService" : false,
+              "name" : "Skip head line",
+              "sensitive" : false
+            },
+            "FlowFiles per Batch" : {
+              "displayName" : "FlowFiles per Batch",
+              "identifiesControllerService" : false,
+              "name" : "FlowFiles per Batch",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.kudu.PutKudu",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.0.1.0.0.0-90"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "b5019830-2dce-392a-b014-a7e3c2261a89",
+          "identifier" : "a61d984a-5f70-3820-9ad8-57eb00e9bfa9",
+          "name" : "Consulta tabela no Oracle",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 532.7667236328125,
+            "y" : 392.83331298828125
+          },
+          "properties" : {
+            "Table Name" : "spcjava_etr_tip_ass_2",
+            "db-fetch-db-type" : "MySQL",
+            "dbf-default-precision" : "10",
+            "Max Wait Time" : "0 seconds",
+            "Database Connection Pooling Service" : "c08ad729-c118-3aaf-8a46-9c1c3cf4e272",
+            "Maximum-value Columns" : "id",
+            "dbf-user-logical-types" : "false",
+            "qdbt-output-batch-size" : "0",
+            "qdbt-max-rows" : "0",
+            "qdbt-max-frags" : "0",
+            "dbf-default-scale" : "0",
+            "Fetch Size" : "0",
+            "dbf-normalize" : "false"
+          },
+          "propertyDescriptors" : {
+            "Table Name" : {
+              "displayName" : "Table Name",
+              "identifiesControllerService" : false,
+              "name" : "Table Name",
+              "sensitive" : false
+            },
+            "db-fetch-db-type" : {
+              "displayName" : "Database Type",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-db-type",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "Max Wait Time" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "Max Wait Time",
+              "sensitive" : false
+            },
+            "Database Connection Pooling Service" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "Database Connection Pooling Service",
+              "sensitive" : false
+            },
+            "Maximum-value Columns" : {
+              "displayName" : "Maximum-value Columns",
+              "identifiesControllerService" : false,
+              "name" : "Maximum-value Columns",
+              "sensitive" : false
+            },
+            "dbf-user-logical-types" : {
+              "displayName" : "Use Avro Logical Types",
+              "identifiesControllerService" : false,
+              "name" : "dbf-user-logical-types",
+              "sensitive" : false
+            },
+            "qdbt-output-batch-size" : {
+              "displayName" : "Output Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-output-batch-size",
+              "sensitive" : false
+            },
+            "qdbt-max-rows" : {
+              "displayName" : "Max Rows Per Flow File",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-max-rows",
+              "sensitive" : false
+            },
+            "qdbt-max-frags" : {
+              "displayName" : "Maximum Number of Fragments",
+              "identifiesControllerService" : false,
+              "name" : "qdbt-max-frags",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            },
+            "Fetch Size" : {
+              "displayName" : "Fetch Size",
+              "identifiesControllerService" : false,
+              "name" : "Fetch Size",
+              "sensitive" : false
+            },
+            "db-fetch-sql-query" : {
+              "displayName" : "Custom Query",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-sql-query",
+              "sensitive" : false
+            },
+            "Columns to Return" : {
+              "displayName" : "Columns to Return",
+              "identifiesControllerService" : false,
+              "name" : "Columns to Return",
+              "sensitive" : false
+            },
+            "db-fetch-where-clause" : {
+              "displayName" : "Additional WHERE clause",
+              "identifiesControllerService" : false,
+              "name" : "db-fetch-where-clause",
+              "sensitive" : false
+            },
+            "dbf-normalize" : {
+              "displayName" : "Normalize Table/Column Names",
+              "identifiesControllerService" : false,
+              "name" : "dbf-normalize",
+              "sensitive" : false
+            },
+            "transaction-isolation-level" : {
+              "displayName" : "Transaction Isolation Level",
+              "identifiesControllerService" : false,
+              "name" : "transaction-isolation-level",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      }
+    }
+  }
+}
